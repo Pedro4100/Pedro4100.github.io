@@ -2,19 +2,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Materias Plan Periodismo Deportivo</title>
+</head>
+ 
+
+
 
 <style>
-
-  table,
-  td,
-  tr {
-    border: 1px solid black;
-    font-weight: bold;
-    text-align: center;
-    width: 1000;
-    color: black;
-    background-color: rgba(200, 200, 200, 200);
-  }
+ 
+ body{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border:0;
+  padding: 0;
+ }
 
   #Listado_Principal{
    text-align: left;
@@ -38,23 +45,22 @@
     padding-right: 10px;
   }
 
-
-  *{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
 
 section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
 
     header{width:100%; display:table; background-color:black; margin-bottom:50px;}
     #logo{float:left; font-size:24px; text-transform:uppercase; color:white; font-weight:600; padding:20px 0px;}
     nav{width:auto; float:right;}
-    nav ul{display:table; float:right;}
+    nav ul{display:table; float:right; margin-top: 0px;}
     nav ul li{float:left;}
     nav ul li:last-child{padding-right:0px;}
-    nav ul li a{color:white; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+    nav ul li a{color:white; font-size: 20px; padding: 60px 20px; display:inline-block; transition: all 0.5s ease 0s;}
     nav ul li a:hover{background-color:white; color:black; transition: all 0.5s ease 0s;}
     nav ul li a:hover i{color:black; transition: all 0.5s ease 0s;}
     nav ul li a i{padding-right:0px; color: white; transition: all 0.5s ease 0s;}
 
-    .toggle-menu ul{display:table; width:25px;}
+    .toggle-menu ul{display:table; width:25px; margin-top: 30px;}
 .toggle-menu ul li{width:100%; height:3px; background-color:white; margin-bottom:4px;}
 .toggle-menu ul li:last-child{margin-bottom:0px;}
 
@@ -108,9 +114,71 @@ nav{top:47px;}
 h1 {padding: 20px 0px;}
 }
 
+footer{
+  background-color: black;
+  height: 8rem;
+  width: 100%;
+  bottom: 0px;
+
+}
+
+.footer__social{
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.footer__social li{
+  display: inline-block;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+
+table.darkTable {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 5px solid rgba(139, 95, 39, 1);
+  background-color: #4A4A4A;
+  width: 90%;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 5%;
+}
+table.darkTable td, table.darkTable th {
+  border: 3px solid rgba(139, 95, 39, 1);
+  padding: 10px 9px;
+  width: 20%;
+}
+table.darkTable tbody td {
+  font-size: 15px;
+  color: #E6E6E6;
+  font-weight: bold;
+}
+table.darkTable tr:nth-child(even) {
+  background: #888888;
+}
+table.darkTable thead {
+  background: #000000;
+  border-bottom: 3px solid #000000;
+}
+table.darkTable thead th {
+  font-size: 25px;
+  font-weight: bold;
+  color: #E6E6E6;
+  text-align: center;
+  border-left: 2px solid rgba(139, 95, 39, 1);
+}
+table.darkTable thead th:first-child {
+  border-left: none;
+}
+
+table.darkTable tfoot td {
+  font-size: 15px;
+}
+
 </style>
 
-<body>
+<body background="./../deportes.jpg">
     
   <div id="TituloPrincipal">
     <script src="https://kit.fontawesome.com/1564640b71.js" crossorigin="anonymous"></script>
@@ -119,7 +187,7 @@ h1 {padding: 20px 0px;}
       <section>
   
       <figure>
-       <a href="./../index.html"><img src="./../logoPrincipal.png" alt="LogtipoPrincipal" width=auto height=auto id="logo"></a> 
+       <a href="./../index.html"><img src="./../logoPrimario.png" alt="LogtipoPrincipal" width=125px height=100px id="logo"></a> 
       </figure>
       
       <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
@@ -128,7 +196,7 @@ h1 {padding: 20px 0px;}
       <div class="logo"></div>
       <nav>
       <ul>
-      <li><a href="./../cv/cvpedrososa.pdf"><i id="logotiposMenu" class="fas fa-file"></i>Curriculm Vitae</a></li>
+      <li><a href="./../cv/cvpedrososa.pdf"  target="_blank"><i id="logotiposMenu" class="fas fa-file"></i>Curriculm Vitae</a></li>
       <li><a href="./../analista.html"><i id="logotiposMenu" class="fas fa-desktop"></i>Analista Sistemas</a></li>
       <li><a href="./../Periodismo/index.html"><i id="logotiposMenu" class="fas fa-futbol"></i>Periodismo Deportivo</a></li>
       </ul>
@@ -136,396 +204,338 @@ h1 {padding: 20px 0px;}
       </header>
       
       </section>
-    <title>Materias Plan Analista en Sistemas</title>
   
   </div>
 
-  <div id="Titulo">
-    <head>
-      <br>
-      <br>
-      <title>Materias Plan Periodismo Deportivo</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    </head>
-    </div>
-
-
-
     <div id="Titulo">
         <center>
-        <FONT FACE="times new roman" SIZE=7 COLOR="black" ><b style="text-decoration: underline;">PERIODISMO DEPORTIVO</b>
-          </FONT>
+          <p style="font-size: 7rem ;font-family: 'Architects Daughter', cursive; font-weight: bold;  color: rgba(139, 95, 39, 1);  text-shadow: 8px 8px 8px black;">Materias Periodismo Deportivo</p>
         </center>
         </div>
-      
-            <hr color="lightBlue" size="3">
-        <blockquote>
-          <blockquote>
-            <blockquote>
 
-              <ul id="Listado_Principal">
-                <li><FONT style="text-decoration: underline; font-weight: bold;">Nombre y Apellido:</FONT> <FONT style="font-weight: bold;">Pedro Martin Sosa</FONT></li>
-                <li><FONT style="text-decoration: underline; font-weight: bold;">DNI:</FONT> <FONT style="font-weight: bold;">41.317.822</FONT></li>
-                <li><FONT style="text-decoration: underline; font-weight: bold;">E-Mail:</FONT> <FONT style="font-weight: bold;">pedromsosa73@gmail.com</FONT></li>
-                <li><FONT style="text-decoration: underline; font-weight: bold;">Telefono:</FONT> <FONT style="font-weight: bold;">3525-431259</FONT></li>
-                <li><FONT style="text-decoration: underline; font-weight: bold;">Año Inicio Carrera:</FONT> <FONT style="font-weight: bold;">2017</FONT></li>
-              </ul> 
+        <table class="darkTable">
+          <thead>
+          <tr>
+          <th>Materias Primer Año</th>
+          <th>1er Cuatrimestre</th>
+          <th>2do Cuatrimestre</th>
+          <th>Nota Final</th>
+          <th>Modalidad Academica</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>Introduccion a la Comunicacion Social</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>8</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaIntroduccionComunicacionSocial.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Discurso Periodistico</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>8</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaDiscursoPeriodistico.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Tecnicas de la Comunicacion Oral</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>9</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaTecnicasComunicacionOral.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Historia del Pensamiento Filosofico</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>9</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaHistoriaPensamientoFilosofico.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Deportes Colectivos I</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>10</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaDeportesColectivoUno.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Practica Profesionalizante I</td>
+          <td>X</td>
+          <td>&nbsp;</td>
+          <td>10</td>
+          </tr>
+          <tr>
+          <td>Periodismo Radial</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cursando</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaPeriodismoRadial.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Ingles I</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cusando</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaInglesI.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Locucion</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cursando</td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>Historia General del Periodismo</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cursando</td>
+          <td><a href="./../ModalidadesPeriodismo/ModalidadAcademicaHistoriaPeriodismo.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+          </tr>
+          <tr>
+          <td>Deportes Individuales</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cursando</td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>Practica Profesionalizante II</td>
+          <td>&nbsp;</td>
+          <td>X</td>
+          <td>Cursando</td>
+          <td></td>
+          </tr>
+          </tbody>
+          </table>
+
+          <table class="darkTable">
+            <thead>
+            <tr>
+            <th>Materias Segundo Año</th>
+            <th>1er Cuatrimestre</th>
+            <th>2do Cuatrimestre</th>
+            <th>Nota Final</th>
+            <th>Modalidad Academica</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Periodismo Televisivo y Audiovisual</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Relaciones Publicas</td>
+            <td>x</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Investigacion Periodistica</td>
+            <td>x</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Sociologia de la Comunicacion</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Deportes Colectivos II</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Practica Profesionalizante III</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Literatura Critica</td>
+            <td>&nbsp;</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Ingles II</td>
+            <td>&nbsp;</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Propaganda y Publicidad</td>
+            <td>&nbsp;</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Deportes Mecanicos</td>
+            <td>&nbsp;</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td>Practica Profesionalizante IV</td>
+            <td>&nbsp;</td>
+            <td>X</td>
+            <td>&nbsp;</td>
+            <td></td>
+            </tr>
+            </tbody>
+            </table>
+
+            
+            <table class="darkTable">
+              <thead>
+              <tr>
+              <th>Materias Tercer Año</th>
+              <th>1er Cuatrimestre</th>
+              <th>2do Cuatrimestre</th>
+              <th>Nota Final</th>
+              <th>Modalidad Academica</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>Periodismo Grafico</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Organizacion y Gestion de las Empresas Periodisticas</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Legislacion de la Comunicacion</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Deportes Colectivos III</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Sociologia del Deporte</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Practica Profesionalizante V</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Deportes Alternativos</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Medicina del Deporte</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Derecho del Deporte</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Historia del Deporte</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Periodismo Digital</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+              <td>Etica y Deontologia Profesional</td>
+              <td>&nbsp;</td>
+              <td>X</td>
+              <td>&nbsp;</td>
+              <td></td>
+              </tr>
+              <tr>
+                <td>Practica Profesionalizante VI</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>&nbsp;</td>
+                <td></td>
+                </tr>
+              </tbody>
+              </table>
     
-    
-                <table class="clase1">
-      
 
-                    <tr>
-                      <td scope="col" style="background-color: red;"><strong>Materia PRIMER AÑO</strong></td>
-                      &nbsp;
-              
-                      <td style="background-color: red;"><strong>1er Cuatrimestre</strong></td>
-              
-                      <td style="background-color: red;"><strong>2do Cuatrimiestre</strong></td>
-                      <td style="background-color: red;"><strong>NOTA FINAL</strong></td>
-                      <td style="background-color: red;"><strong>MODALIDAD ACADEMICA</strong></td>
-              
-              
-                    </tr>
-              
-                    <tr>
-                      <td>Introduccion a la Comunicacion Social</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">8</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaIntroduccionComunicacionSocial.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Discurso Periodistico</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">8</td>   
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaDiscursoPeriodistico.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
+
+                  <footer class="footer" role="contentinfo">
+                    <div>
                       
-                    </tr>
-              
-                    <tr>
-                      <td>Tecnicas de la Comunicacion Oral</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">9</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaTecnicasComunicacionOral.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Historia del pensamiento Filosofico</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">9</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaHistoriaPensamientoFilosofico.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>Deportes Colectivos I</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">10</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaDeportesColectivoUno.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-              
-                      
-                    </tr>
-              
-                    <tr>
-                      <td>Practica Profesionalizante</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;">10</td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Periodismo Radial</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaPeriodismoRadial.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Ingles I</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaInglesI.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Locucion</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Historia General del Periodismo</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td><a href="../ModalidadesPeriodismo/ModalidadAcademicaHistoriaPeriodismo.pdf" target="_blank" style="cursor: pointer;">Ir a Modalidad Academica</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>Deportes Individuales</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Practica Profesionalizante II</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;">CURSANDO</td>
-                      <td></td>
-                    </tr>
-                                
-                  </table>
-
-                  <table class="clase2">
-      
-
-                    <tr>
-                      <td scope="col" style="background-color: red;"><strong>Materia SEGUNDO AÑO</strong></td>
-                      &nbsp;
-              
-                      <td style="background-color: red;"><strong>1er Cuatrimestre</strong></td>
-              
-                      <td style="background-color: red;"><strong>2do Cuatrimiestre</strong></td>
-                      <td style="background-color: red;"><strong>NOTA FINAL</strong></td>
-                      <td style="background-color: red;"><strong>MODALIDAD ACADEMICA</strong></td>
-              
-              
-                    </tr>
-              
-                    <tr>
-                      <td>Periodismo Televisivo y Audiovisual</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Relaciones Publicas</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>   
-                      <td></td>
-                      
-                    </tr>
-              
-                    <tr>
-                      <td>Investigacion Periodistica</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Sociologia de la Comunicacion</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>Deportes Colectivos II</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-              
-                      
-                    </tr>
-              
-                    <tr>
-                      <td>Practica Profesionalizante III</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Literatura Critica</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Ingles II</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Propaganda y Publicidad</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Deportes Mecanicos</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Practica Profesionalizante IV</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-                          
-                  </table>
-
-
-
-                  <table class="clase3">
-      
-
-                    <tr>
-                      <td scope="col" style="background-color: red;"><strong>Materia TERCER AÑO</strong></td>
-                      &nbsp;
-              
-                      <td style="background-color: red;"><strong>1er Cuatrimestre</strong></td>
-              
-                      <td style="background-color: red;"><strong>2do Cuatrimiestre</strong></td>
-                      <td style="background-color: red;"><strong>NOTA FINAL</strong></td>
-                      <td style="background-color: red;"><strong>MODALIDAD ACADEMICA</strong></td>
-              
-              
-                    </tr>
-              
-                    <tr>
-                      <td>Periodismo Grafico</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Organizacion y Gestion de las Empresas Periodisticas</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>   
-                      <td></td>
-                      
-                    </tr>
-              
-                    <tr>
-                      <td>Legislacion de la Comunicacion</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Deportes Colectivos III</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>Sociologia del Deporte</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-              
-                      
-                    </tr>
-              
-                    <tr>
-                      <td>Practica Profesionalizante V</td>
-                      <td>X</td>
-                      <td>-</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Deportes Alternativos</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Medicina del Deporte</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-              
-                    <tr>
-                      <td>Derecho del Deporte</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Historia del Deporte</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Periodismo Digital</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Etica y Deontologia Profesional</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-
-                    <tr>
-                      <td>Practica Profesionalizante VI</td>
-                      <td>-</td>
-                      <td>X</td>
-                      <td style="background-color:  lightgreen;"></td>
-                      <td></td>
-                    </tr>
-                                
-                  </table>
-                  <br>
-
-                  <input type="button" id="botonVolver" value="Volver" onclick="location.href='../principal.html'">
+                      <ul class="footer__social">
+                  
+                        <li>
+                        <a href="https://www.facebook.com/pedro.sosa.52035/" target="_blank" rel="nofollow noopener noreferrer">
+                          <i class="fab fa-facebook-square" style="color: white; font-size: 3rem;"></i>
+                        </a>
+                      </li>
+                
+                      <li>
+                        <a href="https://www.instagram.com/sosa_pedro98/" target="_blank" rel="nofollow noopener noreferrer">
+                          <i class="fab fa-instagram" style="color: white; font-size: 3rem;"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://api.whatsapp.com/send?phone=+54 9 3525431259" target="_blank" rel="nofollow noopener noreferrer">
+                        <i class="fab fa-whatsapp" style="color: white; font-size: 3rem;"></i>
+                        </a>
+                      </li>
+                
+                      </ul>
+                
+                      <p class="footer__copyright" style="text-align: center; color: white;">Copyright © 2021. Todos los derechos reservados</p>
+                    </div>
+                
+                  </footer>
               
 </body>
